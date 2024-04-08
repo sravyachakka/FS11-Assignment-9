@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information Form</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <h2>Customer Information Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Contact Phone No:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"required>
+      
+
+        <label for="days">Preferred Days of Purchasing:</label>
+        <input type="text" id="days" name="days" required>
+
+        <label for="item">Favorite Item:</label>
+        <select id="item" name="item" required>
+            <option value="">Select</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Home Goods">Home Goods</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="suggestions">Suggestions:</label>
+        <textarea id="suggestions" name="suggestions"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
